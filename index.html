@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>blkstar</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div id="app">
+            <section class="hero is-dark is-fullheight">
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        <nav class="level">
+                            <div v-for="(value, key) in time" class="level-item has-text-centered">
+                                <div>
+                                    <p class="heading">{{ key }}</p>
+                                    <p class="title">{{ value }}</p>
+                                </div>
+                            </div>
+                        </nav>
+                        <h2 class="subtitle">{{ message }}</h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

@@ -1,4 +1,4 @@
-let liveMoment = moment('2019-10-01').startOf('day');
+let liveMoment = moment('2021-06-01').startOf('day');
 
 let app = new Vue({
     el: '#app',
